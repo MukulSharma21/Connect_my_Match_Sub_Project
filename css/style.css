@@ -174,3 +174,53 @@ body {
 	font-family: 'Baloo Chettan';
 	font-weight: normal;
 }
+
+/*Hidden Section Starts Here*/
+
+#hidden{
+	background: #fafafa;
+	display: none;
+	height: 0;
+}
+
+.subjects{
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (1fr)[4];
+	    grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 15px;
+}
+
+.sub-list{
+	list-style: none;
+	width: 96%;
+	margin: 20px 2%;
+}
+
+.heading{
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	font-size: 1rem;
+	padding-bottom: 15px;
+	margin-top: 10px;
+	font-family: lato;
+	color: #838589;
+	text-transform: capitalize;
+}
+
+.heading:hover,
+.sub-list li a:hover{
+	text-decoration: underline;
+	-webkit-text-decoration-color: #838589;
+	        text-decoration-color: #838589;
+}
+
+.sub-list li{
+	padding: 5px;
+}
+
+.sub-list li a{
+	color: #4e5158;
+	text-decoration: none;
+	font-family: roboto;
+	font-size: 0.9rem;
+}
