@@ -9,6 +9,7 @@ btn.addEventListener('click', function() {
 		num = num + 1;
 	} else {
 		hidden_section.style.display = "none";
+		num = 0;
 	}
 });
 
