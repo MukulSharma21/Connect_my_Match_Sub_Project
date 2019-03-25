@@ -13,6 +13,7 @@ font-family: 'Baloo Chettan', cursive;
 
 body {
 	max-width: 1280px;
+	background-color: #f0f1f2;
 }
 
 .wrapper{
@@ -33,6 +34,8 @@ body {
 	padding: 7px 0;
 	position: -webkit-sticky;
 	position: sticky;
+	top: 0;
+	z-index: 10;
 }
 
 .left-side-content,
@@ -180,7 +183,7 @@ body {
 #hidden{
 	background: #fafafa;
 	display: none;
-	height: 0;
+	z-index: 9999;
 }
 
 .subjects{
@@ -223,4 +226,298 @@ body {
 	text-decoration: none;
 	font-family: roboto;
 	font-size: 0.9rem;
+}
+
+/*Article section*/
+
+.introduction{
+	background-color: white;
+	border: 2px solid rgba(0,0,0,0.1);
+	border-radius: 8px;
+	margin-top: 30px;
+	padding: 15px 30px;
+	display: flex;	
+	justify-content: space-between;
+}
+
+.intro-content{
+	display: flex;	
+	justify-content: space-between;	
+}
+
+.text-heading{
+	color: #027d97;
+	font-size: 1.5rem;
+	font-family: roboto;
+	padding: 20px 20px 5px 20px;
+	text-transform: capitalize;
+}
+
+.lead{
+	font-size: 1.1rem;
+	color: rgba(0,0,0,0.7);
+	font-family: roboto;
+	padding: 0px 20px 5px 20px;
+}
+
+.intro-btn{
+	padding: 40px 60px;
+}
+
+.intro-btn button {
+	border: none;
+	background: #1865f2;
+	font-family: lato;
+	font-size: 1.2rem;
+	padding: 10px 30px;
+	color: white;
+	border-radius: 2px;
+}
+
+.intro-btn button:hover {
+	cursor: pointer;
+}
+
+
+.intoduction .circle{
+	width: 100%;
+}
+
+/*Our work section*/
+
+#work{
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 2fr;
+	    grid-template-columns: 1fr 2fr;
+	grid-column-gap: 10px;
+	margin-top: 30px;
+	padding: 20px 0;
+	
+}
+
+#scroll{
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+.course-summary .sub-list li{
+	padding: 10px;
+}
+
+.course-lesson {
+	background-color: white;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin: 15px 0;
+}
+
+.lesson-heading{
+	display: flex;
+	justify-content: flex-start;
+	padding: 5px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+.lesson-name{
+	font-family: lato;
+	font-size: 1rem;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.lesson-heading img{
+	width: 40px;
+	height: 40px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.lesson-detail{
+	display: flex;
+	justify-content: space-around;
+}
+
+.lesson-detail .col-1 .sub-list{
+	margin: 0;
+	padding: 2px;
+}
+.lesson-detail .col-1 .sub-list  li a{
+	text-transform: capitalize !important;
+}
+
+.col-1{
+	width: 50%;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.community{
+	width: 30%;
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px;
+}
+
+.community a{
+	color: rgba(0,0,0,0.8);
+	font-family: roboto;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+.fa-comments{
+	padding-right: 10px;
+}
+/*Getting started*/
+
+#started{
+	margin: 20px 0;
+	padding: 50px;
+	border-top: 2px solid rgba(0,0,0,0.2);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+#started h2,
+#started h1{
+	text-align: center;
+	font-family: lato;
+	font-size: 1rem;
+	color: rgba(0,0,0,0.5);
+}
+#started h1{
+	font-size: 1.4rem;
+	color: rgba(0,0,0,0.7);
+}
+
+#started p{
+	text-align: center;
+	font-size: 1rem;
+	font-family: roboto;
+	margin: 30px auto 10px;
+	width: 60%;
+}
+
+#started button{
+	color: #346ef3;
+	background-color: transparent;
+	border: 1px solid rgba(0,0,0,0.3);
+	padding: 10px 25px;
+	font-size: 1.2rem;
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	border-radius: 5px;
+}
+
+#started button:hover{
+	border: 3px solid #346ef3;
+}
+
+/*Footer grid*/
+
+footer{
+	background: #0a2a66;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+
+#grid{
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 2fr 1fr 1fr 1fr;
+	    grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+		border-bottom: 1px solid white;
+		padding-bottom: 10px;
+
+}
+
+.grid-item h1,
+.grid-item h1 a{
+	font-size: 1.2rem;
+	padding: 20px 5px;
+	margin-bottom: 20px;
+	color: white;
+	font-weight: normal;
+	font-family: roboto;
+}
+
+.grid-item h1{
+	padding: 20px;
+}
+
+form{
+	margin-top: 10rem;
+}
+form label{
+	font-family: lato;
+	font-size: 1rem;
+	color: white;
+	margin-right: 10px;
+}
+
+form select{
+	background-color: black;
+	padding: 5px 15px;
+	border: none;
+	width: 200px;
+	color: white;
+	border-radius: 3px;
+}
+
+.grid-item ul{
+	list-style: none;
+	margin-top: 20px;
+}
+.grid-item ul li{
+	padding: 10px;
+}
+.footer-link{
+	color: white;
+	font-size: 0.7rem;
+	text-decoration: none;
+	font-family: lato;
+	transition: all ease 0.7s;
+}
+
+.footer-link:hover,
+.hover-link:hover{
+	color: #28a1e2;
+	text-decoration: underline;
+	transition: all ease 0.7s;
+	-webkit-text-decoration-color: #28a1e2;
+	        text-decoration-color: #28a1e2;
+}
+
+.footer-nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-link,.footer-navbar{
+	display: flex;
+	list-style: none;
+	margin-top: 20px;
+}
+
+.social-link li,
+.footer-navbar li {
+	padding: 0 10px;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram{
+	color: white;
+	font-size: 1.2rem;
+	opacity: 0.8;
+	transition: all ease 0.4s;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover{
+	transition: all ease 0.4s;
+	font-size: 1.3rem;
+	opacity: 1;
 }
